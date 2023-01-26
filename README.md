@@ -1,6 +1,6 @@
 `#php` `#oop` `#master-in-software-engineering`
 
-# Assembler School: OOP Basics with PHP <!-- omit in toc -->
+# Assembler School: Miquel Abella OOP Basics with PHP <!-- omit in toc -->
 
 In this project you will learn the basics of OOP using mobile devices as a reference. In the _"Project files"_ section you will find a description of the content to be displayed in each file.
 
