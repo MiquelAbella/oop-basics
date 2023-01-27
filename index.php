@@ -4,7 +4,7 @@ require_once('./stringInstrument.php');
 require_once('./guitar.php');
 
 
-$violin = new StringInstrument("violin", "bowed", "sharp", 4);
+$violin = new StringInstrument("violin", "string", "sharp", "bowed", 4);
 
 echo $violin->getName();
 echo $violin->getDescription() . "<br/>";
@@ -18,7 +18,7 @@ echo $violin->__destruct();
 echo "<hr>";
 
 
-$gibson = new Guitar("Gibson Les Paul", "string", "sharp", 6, "string", "electric");
+$gibson = new Guitar("Gibson Les Paul", "string", "sharp",  "string", 6, "electric");
 
 echo $gibson->getName();
 echo $gibson->getDescription() . "<br/>";

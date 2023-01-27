@@ -6,9 +6,9 @@ class StringInstrument extends Instrument
     private $isTuned = false;
     static public $hasStrings = true;
 
-    public function __construct(string $name, string $type, string $pitch, int $stringNum)
+    public function __construct(string $name, string $family, string $pitch, string $type, int $stringNum)
     {
-        parent::__construct($name, "string", $pitch);
+        parent::__construct($name, $family, $pitch);
         $this->stringNum = $stringNum;
         $this->type = $type;
     }
