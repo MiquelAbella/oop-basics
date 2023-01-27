@@ -1,10 +1,6 @@
 <?php
 
-interface instrumentInterface
-{
-    public function getDescription(): string;
-    public function makeSound(): string;
-}
+require_once('instrumentInterface.php');
 
 abstract class Instrument implements instrumentInterface
 {
