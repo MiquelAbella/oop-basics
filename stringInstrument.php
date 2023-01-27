@@ -1,17 +1,15 @@
 <?php
 class StringInstrument extends Instrument
 {
-    public $stringNum;
-    public $family;
-    public $type;
-    public $isTuned = false;
+    protected $stringNum;
+    protected $type;
+    private $isTuned = false;
     static public $hasStrings = true;
 
     public function __construct(string $name, string $type, string $pitch, int $stringNum)
     {
-        parent::__construct($name, $type, $pitch, $family = "string");
+        parent::__construct($name, $type, $pitch, "string");
         $this->stringNum = $stringNum;
-        $this->family = $family;
     }
 
     public function makeSound(): string
@@ -55,7 +53,6 @@ class StringInstrument extends Instrument
 
     public function __destruct()
     {
-        $this;
-        return "<p>Destructing $this->name class</p>";
+        return "<p>Destructing $this->name</p>";
     }
 }

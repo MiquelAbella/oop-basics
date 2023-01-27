@@ -4,9 +4,9 @@ require_once('instrumentInterface.php');
 
 abstract class Instrument implements instrumentInterface
 {
-    public $name;
-    public $family;
-    public $pitch;
+    protected $name;
+    protected $family;
+    protected $pitch;
 
     public function __construct(string $name, string $family, string $pitch)
     {

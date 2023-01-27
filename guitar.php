@@ -7,7 +7,6 @@ class Guitar extends StringInstrument
     {
         parent::__construct($name, $type, $pitch, $stringNum, $family);
         $this->guitarType = $guitarType;
-        $this->stringNum = $stringNum;
     }
 
     public function getDescription(): string
