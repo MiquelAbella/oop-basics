@@ -8,8 +8,9 @@ class StringInstrument extends Instrument
 
     public function __construct(string $name, string $type, string $pitch, int $stringNum)
     {
-        parent::__construct($name, $type, $pitch, "string");
+        parent::__construct($name, "string", $pitch);
         $this->stringNum = $stringNum;
+        $this->type = $type;
     }
 
     public function makeSound(): string
