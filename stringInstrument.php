@@ -27,6 +27,13 @@ class StringInstrument extends Instrument
         }
     }
 
+    public function getDescription(): string
+    {
+        return $this->stringNum > 1
+            ? "<p><strong>Description: </strong> A $this->name is a $this->family instrument with $this->type $this->stringNum strings that makes a $this->pitch plesant sound.</p>"
+            : "<p><strong>Description: </strong> A $this->name is a $this->family instrument with $this->type $this->stringNum string that makes a $this->pitch plesant sound.</p>";
+    }
+
     public function getName()
     {
         return "<h2>$this->name</h2>";
@@ -45,12 +52,6 @@ class StringInstrument extends Instrument
             : "<p>Oh! please tune the $this->name, it sounds really bad</p>";
     }
 
-    public function getDescription(): string
-    {
-        return $this->stringNum > 1
-            ? "<p><strong>Description: </strong> A $this->name is a $this->family instrument with $this->type $this->stringNum strings that makes a $this->pitch plesant sound.</p>"
-            : "<p><strong>Description: </strong> A $this->name is a $this->family instrument with $this->type $this->stringNum string that makes a $this->pitch plesant sound.</p>";
-    }
 
     public function __destruct()
     {
