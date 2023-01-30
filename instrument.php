@@ -1,6 +1,6 @@
 <?php
 
-require_once('instrumentInterface.php');
+require_once('InstrumentInterface.php');
 
 abstract class Instrument implements instrumentInterface
 {

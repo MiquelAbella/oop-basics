@@ -1,7 +1,7 @@
 <?php
-require_once('./instrument.php');
-require_once('./stringInstrument.php');
-require_once('./guitar.php');
+require_once('./Instrument.php');
+require_once('./StringInstrument.php');
+require_once('./Guitar.php');
 
 
 $violin = new StringInstrument("violin", "string", "sharp", "bowed", 4);
